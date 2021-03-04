@@ -17,10 +17,12 @@ pip install -r requirements.txt
 - Run [flask app](/App/) `app.py` using the command `python app.py`
 - `Dockerfile` available to dockerise fake-news-api. Command `docker build -f Dockerfile -t fake-news-app:api .` _**Do not forget the dot(.) it tells docker that the dockerfile to be used is in the current directory.**_
 - If you do not wish to build the docker, you can pull my container from dockerhub instead `docker pull sg22/fake-news-app:api2`
+- Run the dockerised app `docker run -ti -p 1234:8888 <docker_image_name> python3 app.py`
+- On your browser, visit `http://localhost:1234` and your app would be running successfully.
 
 ## Training Notebook
 - [Jupyter Notebook](/fakenews_AI.ipynb) for training from scratch.
-- Use data from [Kaggle](https://www.kaggle.com/c/fake-news/overview) to run through the notebook
+- Use data from [Kaggle](https://www.kaggle.com/c/fake-news/overview) to run through the notebook.
 - You are welcome to improve the accuracy of my model.
 
 
